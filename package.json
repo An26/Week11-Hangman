@@ -1,0 +1,19 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "description": "hangman game",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/An26/Week11-Hangman.git"
+  },
+  "author": "An Huynh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/An26/Week11-Hangman/issues"
+  },
+  "homepage": "https://github.com/An26/Week11-Hangman#readme"
+}
