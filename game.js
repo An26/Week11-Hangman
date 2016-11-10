@@ -10,7 +10,7 @@ module.exports= function getRandomWord() {
 
 	//console.log(wordsArray);
 
-	//finding a random word using wordsArray
+	//finding a random word
 	var randomWord = wordsArray[Math.floor(Math.random() * wordsArray.length)];
 
 	//taking that random word, and splitting it up into an array
@@ -18,14 +18,14 @@ module.exports= function getRandomWord() {
 
 	//creating a new instance of our new randomized word
 	var constructWord = new Word();
-	console.log('new instance: ' + constructWord);
-
+	//console.log('new instance: ' + constructWord);
 	//pushes this array of random word to word.js to use in it's Word.addLetter constructor
 	randomWordArray.forEach(function(letter) {
 		constructWord.addLetter(letter);
+		
 	})
 
-	console.log(constructWord);
+	console.log("construt word:", constructWord);
 
 	console.log("spliced guess word: " + randomWordArray);
 

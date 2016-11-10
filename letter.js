@@ -12,9 +12,10 @@ module.exports = function Letter(char) {
 	this.display = function() {
 		if (this.guessedYet == false) {
 			console.log('_');
+			//this.char = '_';
 		} else {
 			//return this.char;
-			console.log(this.char);
+			console.log("char:", this.char);
 		}
 	}
 }

@@ -20,7 +20,8 @@ var loss = 0;
 
 var theWord = game();
 
-getGuesses();
+//getGuesses();
+beginPlay();
 
 
 
@@ -34,9 +35,9 @@ function beginPlay(){
 		message: '**********Would you like to play Hang-Morty???**********'
 	}).then(function(response){
 		if (response.toPlay === true){
-		console.log('Gooodddd welllcome. Please lose as many times as you would like.... \nSeriously LOSE, we like seeing Mortys hung-- i mean, put to use!... \n...There\'s a slice a cake for every Morty you hang.');
+			console.log('Gooodddd welllcome. Please lose as many times as you would like.... \nSeriously LOSE, we like seeing Mortys hung-- i mean, put to use!... \n...There\'s a slice a cake for every Morty you hang.');
 
-			//getGuesses();
+			getGuesses();
 
 		} else {
 			console.log('Alllrighty then, there\'s always one creature who rebels and refuses to hand Mortys... \nOFF WITH YOU, BYE!');
@@ -46,7 +47,7 @@ function beginPlay(){
 }
 
 function getGuesses() {
-	console.log('Guess this word: ');
+	console.log('Guess this word: ' );
 	var letterCheck = /^[a-zA-Z]+$/;
 	inquirer.prompt({
 		type: 'input',

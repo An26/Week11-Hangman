@@ -7,11 +7,13 @@ var Letter = require('./letter.js')
 
 module.exports = function Word() {
 	this.letterArray = [];
+
 	this.guessedWord = false;
 
     //uses Letter constructor to make array of objects with the randomWordArray from word.js
     this.addLetter = function(letter) {
         var letterObject = new Letter(letter);
+        
         this.letterArray.push(letterObject);
         console.log('letter array: ' + this.letterArray);
         //console.log('char: ' + letterObject.char);  
@@ -35,7 +37,7 @@ module.exports = function Word() {
             }
         });
     };
-    //where is guessedWord?
+    //where is guessedWord? //check it there are "_" in the word array, if so, NO NO, if not YAY a win
     this.checkWord = function() {
 		if (guessedWord == true) {
             //win ++;
